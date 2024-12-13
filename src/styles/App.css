@@ -1,0 +1,89 @@
+.pokemon-list {
+  display: flex;
+  overflow-x: auto; /* Scroll horizontal */
+  scroll-behavior: smooth; /* Suaviza el scroll */
+  padding: 20px;
+  max-width: 800px; /* Ancho máximo */
+  align-items: center; /* Centra las tarjetas verticalmente */
+  gap: 0; /* Sin espacio entre tarjetas */
+  margin: 0 auto; /* Centra horizontalmente en la pantalla */
+}
+
+.pokemon-list::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(128, 191, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.button_left,
+.button_right {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.button_right {
+  margin-left: 50px; /* Ajusta el espacio solo en el botón derecho */
+}
+
+.button_left:hover,
+.button_right:hover {
+  background-color: black;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  .pokemon-list {
+    max-width: 80%; /* Asegura que ocupe todo el ancho del dispositivo */
+    padding: 10px; /* Reduce el padding para móviles */
+  }
+
+  .carousel-buttons {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .button_left,
+  .button_right {
+    padding: 8px 16px; /* Reduce el tamaño de los botones */
+    font-size: 14px; /* Tamaño más pequeño del texto */
+    margin: 5px; /* Reduce el margen */
+    width: 30%; /* Botones más grandes para facilidad de clic */
+    text-align: center;
+  }
+
+  .button_right {
+    margin-left: 0; /* Elimina margen izquierdo para que sea uniforme */
+  }
+}
+
+/* Adaptación adicional para pantallas muy pequeñas (como teléfonos pequeños) */
+@media (max-width: 480px) {
+  .button_left,
+  .button_right {
+    width: 30%; /* Botones ocupan todo el ancho */
+    margin: 5px 0; /* Espaciado vertical entre botones */
+  }
+
+  .pokemon-list {
+    padding: 5px; /* Aún menos padding */
+  }
+}

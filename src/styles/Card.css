@@ -1,0 +1,37 @@
+.card {
+  flex: 0 0 100%; /* Cada tarjeta ocupa el 80% del ancho del contenedor */
+  width: 100%; /* Máximo ancho para tarjetas grandes */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  background-color: lightblue;
+  transition: transform 0.2s ease;
+  margin: 20px;
+}
+
+/* .card:hover {
+    transform: scale(1.05);
+  } */
+
+.card-image img {
+  /* width: 100%; Imagen ocupa todo el ancho */
+  height: 200px; /* Altura fija */
+  object-fit: cover; /* Mantiene proporción */
+  filter: drop-shadow(5px 12px 15px rgba(0, 0, 255, 0.7));
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  /* margin: 10px 0; */
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #666;
+}
