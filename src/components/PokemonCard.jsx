@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Card.css";
+import "../styles/Card.css";
 
 const PokemonCard = ({ name, image, type }) => {
   return (

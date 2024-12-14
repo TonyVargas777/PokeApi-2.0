@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { getPokemons, getPokemonData } from "../api/api";
 import PokemonCard from "./PokemonCard";
-import "../Styles/App.css";
+import "../styles/App.css";
 
 const PokemonList = () => {
   const [pokemons, setPokemons] = useState([]);
