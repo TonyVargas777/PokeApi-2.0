@@ -51,12 +51,13 @@
 /* Adaptación para dispositivos móviles */
 @media (max-width: 768px) {
   .pokemon-list {
-    max-width: 80%; /* Asegura que ocupe todo el ancho del dispositivo */
+    max-width: 100%; /* Asegura que ocupe todo el ancho del dispositivo */
     padding: 10px; /* Reduce el padding para móviles */
   }
 
   .carousel-buttons {
     width: 100%; /* Se adapta al ancho del contenedor */
+    display: flex;
     flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
     align-items: center;
   }
@@ -84,6 +85,8 @@
   }
 
   .pokemon-list {
+    width: 90%;
     padding: 5px; /* Aún menos padding */
+    margin: 55px;
   }
 }

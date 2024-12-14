@@ -3,8 +3,8 @@ import PokemonList from "./components/PokemonList";
 
 const App = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center", padding: "20px" }}>Pokémon Gallery</h1>
+    <div className="todo">
+      <h1 className="titulo">Pokémon Gallery</h1>
       <PokemonList />
     </div>
   );
